@@ -130,8 +130,6 @@ pre {
 
 .show-card > div{
   display: block;
-  float: right;
-  width: 52%;
   overflow-y: scroll;
 }
 
