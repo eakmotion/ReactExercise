@@ -41,16 +41,24 @@ const Details = React.createClass({
             </thead>
             <tbody>
               <tr>
-                <td className='left'>{game_teams[0].team.name}</td>
-                <td>2</td>
+                <td className='left'>
+                  <a href={`http://scorebooklive.com/teams/${game_teams[0].team.slug}`} target='_blank'>
+                    {game_teams[0].team.name}
+                  </a>
+                </td>
+                <td>{game_teams[0].score}</td>
                 <td>0</td>
-                <td>2</td>
+                <td>{game_teams[0].score}</td>
               </tr>
               <tr>
-                <td className='left'>{game_teams[1].team.name}</td>
+                <td className='left'>
+                  <a href={`http://scorebooklive.com/teams/${game_teams[1].team.slug}`} target='_blank'>
+                    {game_teams[1].team.name}
+                  </a>
+                </td>
+                <td>{game_teams[1].score}</td>
                 <td>0</td>
-                <td>0</td>
-                <td>0</td>
+                <td>{game_teams[1].score}</td>
               </tr>
             </tbody>
           </table>
@@ -66,11 +74,19 @@ const Details = React.createClass({
             </thead>
             <tbody>
               <tr>
-                <td className='left'>{game_teams[0].team.name}</td>
+                <td className='left'>
+                  <a href={`http://scorebooklive.com/teams/${game_teams[0].team.slug}`} target='_blank'>
+                    {game_teams[0].team.name}
+                  </a>
+                </td>
                 <td>{game_teams[0].score}</td>
               </tr>
               <tr>
-                <td className='left'>{game_teams[1].team.name}</td>
+                <td className='left'>
+                  <a href={`http://scorebooklive.com/teams/${game_teams[1].team.slug}`} target='_blank'>
+                    {game_teams[1].team.name}
+                  </a>
+                </td>
                 <td>{game_teams[1].score}</td>
               </tr>
             </tbody>
@@ -79,7 +95,7 @@ const Details = React.createClass({
 
         <section className='mod-game-meta'>
           <a href={`http://scorebooklive.com/games/${slug}`} target='_blank'>
-            Source-url
+            Source-URL
           </a>
         </section>
 
