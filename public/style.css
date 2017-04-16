@@ -32,7 +32,6 @@ html {
 
 .landing > h1 {
   color: #FF0000;
-  font-family: Skia;
   font-weight: normal;
 }
 
@@ -111,12 +110,12 @@ pre {
   margin-right: 2%;
   border: 2px solid #333;
   border-radius: 4px;
-  text-align: left;
   width: 32%;
   height: 0;
   padding-bottom: 19.8%;
   overflow: hidden;
   margin-bottom: 2%;
+  background-color: #FFF;
 }
 
 .show-card:nth-child(3n), .search > div > a:nth-child(3n) > .show-card {
@@ -170,7 +169,6 @@ header {
 }
 
 header > h1 {
-  font-family: Skia;
   font-weight: normal;
   color: #FF0000;
   margin: 0;
@@ -251,4 +249,167 @@ header > input {
 
 .details > header + section {
   margin-top: 25px;
+}
+
+.sbl-game-content {
+	display: table;
+	width: 100%;
+	background-color: #fff;
+	/*height: 60px;*/
+	position: relative;
+  padding: 10px 0px
+}
+
+.sbl-teams {
+  display: table-cell;
+  width: 70%;
+  padding: 24px 15px 0px 0px
+}
+
+.sbl-team {
+	display: table;
+	width: 100%;
+	height: 50px
+}
+
+.sbl-team-logo img {
+  max-height: 50px;
+  max-width: 60px;
+}
+
+.sbl-team-name {
+	width: 200px;
+  text-align: left;
+  display: table-cell;
+  line-height: 28px;
+  font-size: 2.25rem;
+  vertical-align: top;
+}
+
+.sbl-team-name span {
+  display: block;
+  white-space: nowrap;
+  font-size: 1.25rem;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.sbl-team-score {
+  display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	text-align: center;
+  width: 35%;
+  font-size: 36px;
+}
+
+.sbl-game-links {
+	text-align: center;
+  padding-top: 1.5rem;
+}
+
+.sbl-game-links .btn {
+  text-indent: 0;
+  position: static;
+  width: 80%;
+  border: 1px solid #36c;
+  padding: 14px 9px 9px 9px;
+  font-size: 1.125rem;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 10px;
+  color: #36c;
+}
+
+.btn:hover {
+  background-color: #36c;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+    color: #36c;
+}
+
+.sbl-game {
+  background-color: #FFF;
+}
+
+.sbl-game span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.sbl-game .sbl-team-score {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.sbl-game .team-name {
+  width: 400px;
+}
+
+.sbl-game .sbl-game-status-info {
+  font-size: 27px;
+  padding: 10px;
+  min-width: 54px;
+  height: 54px;
+  color: #fff;
+  border-radius: 27px;
+  background-color: #000;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10px auto 0 auto;
+}
+
+.mod-game-meta {
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  display: table;
+  text-transform: uppercase;
+}
+
+.table-data tbody {
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.table-data thead th {
+  font-size: 1.125rem;
+  text-align: center;
+  color: #666;
+  padding: 0px 6px;
+}
+
+.table-data tbody tr {
+  border-top: 1px solid #ccc;
+}
+
+.table-data tbody td {
+  padding: 10px 6px 4px 6px;
+}
+
+.left {
+  text-align: left !important;
 }

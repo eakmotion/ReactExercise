@@ -10,7 +10,7 @@ const Landing = React.createClass({
         <h3>The first replacement for the paper scorebook</h3>
         <h3>Easier to use than paper</h3>
         <h3>Streams live updates to fans</h3>
-        <Link to='/search'>LIVE SCOREBOARD HERE</Link>
+        <Link to='/search' className='btn'>LIVE SCOREBOARD HERE</Link>
       </div>
     )
   }
